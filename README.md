@@ -1,0 +1,3 @@
+# Screens, Fragments, and the Jetpack Navigation Component
+
+In this project, we'll modify our GitHub search app to add new screens we can navigate to using the Jetpack Navigation Component.  To work with this project, you can clone it from GitHub onto your development machine and then import it into Android Studio using File → New → Import...
