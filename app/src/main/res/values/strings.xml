@@ -6,4 +6,7 @@
     <string name="search_error">
       Error fetching search results: %1$s
     </string>
+
+    <string name="label_github_search">GitHub Search</string>
+    <string name="label_repo_details">Repo Details</string>
 </resources>
