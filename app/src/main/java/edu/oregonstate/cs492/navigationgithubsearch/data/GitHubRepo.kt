@@ -2,6 +2,7 @@ package edu.oregonstate.cs492.navigationgithubsearch.data
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import java.io.Serializable
 
 @JsonClass(generateAdapter = true)
 data class GitHubRepo(
@@ -9,4 +10,4 @@ data class GitHubRepo(
     val description: String?,
     @Json(name = "html_url") val url: String,
     @Json(name = "stargazers_count") val stars: Int
-)
+) : Serializable

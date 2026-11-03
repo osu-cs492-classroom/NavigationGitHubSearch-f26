@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.progressindicator.CircularProgressIndicator
@@ -82,5 +83,7 @@ class GitHubSearchFragment : Fragment(R.layout.fragment_github_search) {
 
     private fun onGitHubRepoClick(repo: GitHubRepo) {
         Log.d("GitHubSearchFragment", "Repo clicked: ${repo.name}")
+        val directions = GitHubSearchFragmentDirections.navigateToRepoDetail(repo)
+        findNavController().navigate(directions)
     }
 }

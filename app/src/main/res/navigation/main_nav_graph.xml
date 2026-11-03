@@ -17,6 +17,10 @@
     <fragment
         android:id="@+id/repo_detail"
         android:name="edu.oregonstate.cs492.navigationgithubsearch.ui.GitHubRepoDetailFragment"
-        android:label="@string/label_repo_details" />
+        android:label="@string/label_repo_details">
+        <argument
+            android:name="repo"
+            app:argType="edu.oregonstate.cs492.navigationgithubsearch.data.GitHubRepo" />
+    </fragment>
 
 </navigation>

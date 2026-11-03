@@ -4,9 +4,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.navArgs
 import edu.oregonstate.cs492.navigationgithubsearch.R
 
 class GitHubRepoDetailFragment : Fragment(R.layout.fragment_github_repo_detail) {
+    private val args: GitHubRepoDetailFragmentArgs by navArgs()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -14,8 +17,8 @@ class GitHubRepoDetailFragment : Fragment(R.layout.fragment_github_repo_detail) 
         val repoStarsTV = view.findViewById<TextView>(R.id.tv_repo_stars)
         val repoDescriptionTV = view.findViewById<TextView>(R.id.tv_repo_description)
 
-        repoNameTV.text = "Dummy repo name"
-        repoStarsTV.text = "8192"
-        repoDescriptionTV.text = "This is a description of the repo."
+        repoNameTV.text = args.repo.name
+        repoStarsTV.text = args.repo.stars.toString()
+        repoDescriptionTV.text = args.repo.description
     }
 }
