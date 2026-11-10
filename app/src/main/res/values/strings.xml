@@ -9,4 +9,9 @@
 
     <string name="label_github_search">GitHub Search</string>
     <string name="label_repo_details">Repo Details</string>
+
+    <string name="action_share">Share this repo</string>
+    <string name="action_open_in_browser">Open on GitHub.com</string>
+
+    <string name="share_text">%1$s on GitHub: %2$s</string>
 </resources>
